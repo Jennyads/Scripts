@@ -1,10 +1,9 @@
 import { Router } from "express";
-//import Matematica from "../controllers/Matematica"; nao tem chaves por ter default
-import { Matematica } from "../controllers";
-
+import {Matematica} from "../controllers";
+import { authAdmin } from "../middlewares";
 const routes = Router();
 
-routes.get("/sum", Matematica.somar);
-routes.get("/dif", Matematica.subtrair);
+routes.get('/sum', Matematica.somar);
+routes.get('/dif', authAdmin, Matematica.subtrair);
 
 export default routes;
