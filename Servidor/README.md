@@ -1,1 +1,1 @@
-### Exemplo de hierarquia de rotas
+### Exemplo de hierarquia de rotas e TypeORM
