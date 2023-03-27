@@ -1,14 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Contexto from "./contexts/Contexto";
+import A from "./components/A";
+
 
 function App() {
+  const [nome, setNome]= useState("");
+  const [idade, setIdade]= useState("");
+ 
   return (
     <>
-      <div>oi {2+2}</div>
-      <div>Até segunda</div>
+      <Contexto.Provider value={{nome,idade}}> 
+            <A />
+            <div>
+              <label>Nome</label>
+              <input value={nome} onChange={(e)=>setNome(e.target.value)} />
+            </div>
+            <div>
+              <label>Idade</label>
+              <input value={idade} onChange={(e)=>setIdade(e.target.value)} />
+            </div>
+            <div>Nome:{nome} Idade:{idade}</div>
+      </Contexto.Provider>
     </>
   );
 }
 
 export default App;
+
+
