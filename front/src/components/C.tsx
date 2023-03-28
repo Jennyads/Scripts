@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import Contexto from "../contexts/Contexto";
+
+import useExemplo from "../hooks/useExemplo";
 
 function C(){
-    const {nome,idade} = useContext(Contexto);
+  const { nome, idade } = useExemplo();
     return<div>Nome:{nome} Idade={idade}</div>
   }
 
