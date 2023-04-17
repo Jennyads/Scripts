@@ -1,4 +1,4 @@
-import UseContexto from "./useContexto";
+import useContexto from "./useContexto";
 
 
-export { UseContexto };
+export { useContexto };

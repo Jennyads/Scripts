@@ -1,21 +1,18 @@
+import Lotofacil from "../components/Lotofacil";
 import Megasena from "../components/Megasena";
-import { UseContexto } from "../hooks";
+import PaginaCarregamento from "../components/PaginaCarregamento";
+
 
 function Principal(){
-    const {megasena} = UseContexto();
+    
     return (
         <>
-        {megasena.numeroDoConcurso?
-            <div>
-                <Megasena />
-            </div>
-            :
-            <div>Carregando...</div>
-        }
-        
+            <Megasena />
+            <PaginaCarregamento />
+            <Lotofacil />
         </>
-           
-    );
+    )
+       
 }
 
 export default Principal;

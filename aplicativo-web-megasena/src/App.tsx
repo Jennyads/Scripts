@@ -1,7 +1,6 @@
 import { ContextoProvider } from "./contexts/Contexto";
 import Principal from "./pages/Principal";
 
-;
 
 function App() {
  

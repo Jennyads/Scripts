@@ -1,6 +1,10 @@
 export interface LoteriaProps{
     megasena: Props;
     lotofacil: Props;
+    carregamento: boolean;
+    setMegasena: Function;
+    setLotofacil: Function;
+    setCarregamento: Function;
     
 }
 

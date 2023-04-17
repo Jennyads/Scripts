@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Contexto } from "../contexts/Contexto";
 
-function UseContexto(){
+function useContexto(){
     const contexto = useContext(Contexto);
     return contexto;
 }
 
-export default UseContexto;
+export default useContexto;
