@@ -27,13 +27,10 @@ function PaginaCarregamento() {
                 <div className="lds-hourglass"></div>
 
             </div>
-          <hr className="linha" style={{ display: carregamento ? "" : "none" }}></hr>
+          <hr style={{ display: carregamento ? "" : "none" }}></hr>
 
         </>
 
-
-
-
-    )
+   )
 }
 export default PaginaCarregamento;
