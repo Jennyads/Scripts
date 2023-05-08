@@ -4,17 +4,17 @@ import { NomeLoteria } from "../NomeLoteria";
 
 export function Esquerda({ trevo, alt, color, name, dataProximoConcurso, valorEstimadoProximoConcurso, colorPremio }: any) {
     return (
-        <Wrapper>
+        <Container>
             <NomeLoteria trevo={trevo} alt={alt} name={name} color={color} />
             <Estimativa
                 dataProximoConcurso={dataProximoConcurso}
                 valorEstimadoProximoConcurso={valorEstimadoProximoConcurso}
                 colorPremio={colorPremio}
             />
-        </Wrapper>
+        </Container>
     );
 }
 
-const Wrapper = styled.div`
+const Container = styled.div`
     margin-right: 50px;
 `;

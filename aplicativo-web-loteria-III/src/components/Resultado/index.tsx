@@ -5,14 +5,14 @@ export function Resultado({ dezenas, color }: any) {
     <>
       {dezenas && dezenas.map((item: any) => {
         return (
-          <Circle style={{ backgroundColor: color }}>{item.split("")}</Circle>
+          <Circulo style={{ backgroundColor: color }}>{item.split("")}</Circulo>
         );
       })}
     </>
   );
 }
 
-const Circle = styled.div`
+const Circulo = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;

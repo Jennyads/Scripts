@@ -4,14 +4,14 @@ export function Estimativa({ dataProximoConcurso, valorEstimadoProximoConcurso, 
     const value = valorEstimadoProximoConcurso ? valorEstimadoProximoConcurso.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : '';
 
     return (
-        <Wrapper>
-            <Text>Estimativa de prêmio do próximo concurso. Sorteio em {dataProximoConcurso}:</Text>
+        <Container>
+            <Escrita>Estimativa de prêmio do próximo concurso. Sorteio em {dataProximoConcurso}:</Escrita>
             <Premio style={{ color: colorPremio }}>{value}</Premio>
-        </Wrapper>
+        </Container>
     )
 }
 
-const Text = styled.p`
+const Escrita = styled.p`
     color: #4c556c;
 `
 
@@ -21,7 +21,7 @@ const Premio = styled.div`
     font-size: large;
 `
 
-const Wrapper = styled.div`
+const Container = styled.div`
     max-width: 300px;
     margin-left: 55px;
 `

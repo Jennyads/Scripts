@@ -1,5 +1,5 @@
 import { Principal } from "../../components/Principal";
-import trevoQuina from "../../assets/trevo-quina.png";
+import trevoQuina  from "../../assets/trevo-quina.png"
 import { UseContexto } from "../../hooks";
 import { qui } from '../../styles/theme';
 import { Carregando } from "../../components/Carregando";

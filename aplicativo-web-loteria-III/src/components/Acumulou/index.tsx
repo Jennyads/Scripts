@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export function Acumulou({ acumulado }: any) {
 
-    if (acumulado == true) {
-        return <Text>ACUMULOU!</Text>
+    if (acumulado === true) {
+        return <Acumula>ACUMULOU!</Acumula>
     } else {
-        return <Text>NÃO ACUMULOU!</Text>
+        return <Acumula>NÃO ACUMULOU!</Acumula>
     }
 
 }
 
-const Text = styled.div`
+const Acumula = styled.div`
     color: #0066b3;
     margin-top: 15px;
     font-size: 30px;

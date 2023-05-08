@@ -6,13 +6,13 @@ import { Data } from "../Data";
 
 export function Direita({ dezenas, color, acumulado, numeroDoConcurso, dataPorExtenso }: any) {
     return (
-        <Wrapper>
+        <Container>
             <Resultado dezenas={dezenas} color={color} />
             <Acumulou acumulado={acumulado} />
             <Data numeroDoConcurso={numeroDoConcurso} dataPorExtenso={dataPorExtenso} />
-        </Wrapper>
+        </Container>
     );
 }
 
-const Wrapper = styled.div`
+const Container = styled.div`
 `;

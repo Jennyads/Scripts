@@ -6,27 +6,27 @@ export function Menu() {
     const current_page = useLocation().pathname;
 
     return (
-        <Wrapper>
-            <Title>
-                {current_page === "/timemania" ? <Active to="/timemania">Timemania</Active> : <Page color={time.loteria} to="/timemania">Timemania</Page>}
-            </Title>
+        <Container>
+            <Opcao>
+                {current_page === "/timemania" ? <Active to="/timemania">Timemania</Active> : <Pagina color={time.loteria} to="/timemania">Timemania</Pagina>}
+            </Opcao>
 
-            <Title>
-                {current_page === "/megasena" ? <Active to="/megasena">Megasena</Active> : <Page color={mega.loteria} to="/megasena">Megasena</Page>}
-            </Title>
+            <Opcao>
+                {current_page === "/megasena" ? <Active to="/megasena">Megasena</Active> : <Pagina color={mega.loteria} to="/megasena">Megasena</Pagina>}
+            </Opcao>
 
-            <Title>
-                {current_page === "/quina" ? <Active to="/quina">Quina</Active> : <Page color={qui.loteria} to="/quina">Quina</Page>}
-            </Title>
-        </Wrapper>
+            <Opcao>
+                {current_page === "/quina" ? <Active to="/quina">Quina</Active> : <Pagina color={qui.loteria} to="/quina">Quina</Pagina>}
+            </Opcao>
+        </Container>
     )
 }
 
-const Wrapper = styled.div`
+const Container = styled.div`
     margin-left: 25px;
     margin-bottom: 35px;
 `
-const Title = styled.text`
+const Opcao = styled.text`
     font-weight: bold;
     margin-right: 20px;
     text-decoration: none;
@@ -38,7 +38,7 @@ const Active = styled(Link)`
     text-decoration: none;
 `
 
-const Page = styled(Link)`
+const Pagina = styled(Link)`
     color: ${(props) => props.color};
     text-decoration: none;
 `

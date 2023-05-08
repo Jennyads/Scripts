@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export function Data({numeroDoConcurso, dataPorExtenso}:any){
     return(
-        <Text>Concurso {numeroDoConcurso} - {dataPorExtenso}</Text>
+        <Escrita>Concurso {numeroDoConcurso} - {dataPorExtenso}</Escrita>
     )
 }
 
-const Text = styled.p`
+const Escrita = styled.p`
     color: #4c556c;
 `

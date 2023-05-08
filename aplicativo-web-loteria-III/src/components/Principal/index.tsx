@@ -6,14 +6,14 @@ export function Principal({ dezenas, acumulado, numeroDoConcurso, dataPorExtenso
     dataProximoConcurso, valorEstimadoProximoConcurso, colorPremio }: any) {
 
     return (
-        <Wrapper>
+        <Container>
             <Esquerda trevo={trevo} alt={alt} color={color} name={name} dataProximoConcurso={dataProximoConcurso} 
                 valorEstimadoProximoConcurso={valorEstimadoProximoConcurso} colorPremio={colorPremio} />
             <Direita dezenas={dezenas} color={color} acumulado={acumulado} numeroDoConcurso={numeroDoConcurso} dataPorExtenso={dataPorExtenso} />
-        </Wrapper>
+        </Container>
     )
 }
 
-const Wrapper = styled.div`
+const Container = styled.div`
     display: flex;
 `;
