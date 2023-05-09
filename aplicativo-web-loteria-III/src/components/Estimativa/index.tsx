@@ -12,11 +12,11 @@ export function Estimativa({ dataProximoConcurso, valorEstimadoProximoConcurso, 
 }
 
 const Escrita = styled.p`
-    color: #4c556c;
+    color: ${props =>props.theme.data};
 `
 
 const Premio = styled.div`
-    color: #209869;
+    color: ${props =>props.theme.estimativa};
     font-weight: bold;
     font-size: large;
 `

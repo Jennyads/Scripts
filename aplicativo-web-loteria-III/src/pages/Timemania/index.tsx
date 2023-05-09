@@ -1,3 +1,4 @@
+import { ThemeProvider } from "styled-components";
 import trevoTime from "../../assets/trevo-timemania.png";
 import { Carregando } from "../../components/Carregando";
 import { Principal } from "../../components/Principal";
@@ -10,6 +11,7 @@ export function Timemania() {
 
     return (
         <>
+        <ThemeProvider theme={time}>
             <Carregando dataApuracao={timemania.dataApuracao} />
             <Principal
                 trevo={trevoTime}
@@ -24,6 +26,7 @@ export function Timemania() {
                 dezenas={timemania.dezenas}
                 acumulado={timemania.acumulado}
             />
+        </ThemeProvider>
         </>
     )
 }

@@ -7,5 +7,5 @@ export function Data({numeroDoConcurso, dataPorExtenso}:any){
 }
 
 const Escrita = styled.p`
-    color: #4c556c;
+    color: ${props =>props.theme.data};
 `

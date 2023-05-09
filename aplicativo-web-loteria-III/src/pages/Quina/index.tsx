@@ -3,6 +3,7 @@ import trevoQuina  from "../../assets/trevo-quina.png"
 import { UseContexto } from "../../hooks";
 import { qui } from '../../styles/theme';
 import { Carregando } from "../../components/Carregando";
+import { ThemeProvider } from "styled-components";
 
 export function Quina() {
 
@@ -10,6 +11,7 @@ export function Quina() {
 
     return (
         <>
+        <ThemeProvider theme={qui}>
             <Carregando dataApuracao={quina.dataApuracao} />
             <Principal
                 trevo={trevoQuina}
@@ -24,6 +26,7 @@ export function Quina() {
                 dezenas={quina.dezenas}
                 acumulado={quina.acumulado}
             />
+        </ThemeProvider>
         </>
     )
 }

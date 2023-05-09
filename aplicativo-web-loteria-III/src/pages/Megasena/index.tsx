@@ -1,3 +1,4 @@
+import { ThemeProvider } from "styled-components";
 import trevoMega from "../../assets/trevo-megasena.png";
 import { Carregando } from "../../components/Carregando";
 import { Principal } from "../../components/Principal";
@@ -10,7 +11,9 @@ export function Megasena() {
 
     return (
         <>
+        <ThemeProvider theme={mega}>
             <Carregando dataApuracao={megasena.dataApuracao} />
+            
             <Principal
                 trevo={trevoMega}
                 alt="trevo-megasena"
@@ -23,7 +26,9 @@ export function Megasena() {
                 dataPorExtenso={megasena.dataPorExtenso}
                 dezenas={megasena.dezenas}
                 acumulado={megasena.acumulado}
+        
             />
+        </ThemeProvider>
         </>
     )
 }

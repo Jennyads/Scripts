@@ -23,7 +23,7 @@ const Trevo = styled.div`
 
 const Escrita = styled.div`
     margin-left: 10px;
-    color: #209869;
+    color: ${props =>props.theme.bola};
     font-weight: bold;
     font-size: x-large;
 `

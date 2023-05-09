@@ -30,6 +30,13 @@ const Container = styled.div`
   height: 100vh;
 `;
 
+// const Container = styled.div`
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     margin: -50px 0 0 -50%
+// `;
+
 const rotate = keyframes`
     0% {
       transform: rotate(0);
@@ -86,8 +93,5 @@ const Carregar = styled.div`
   
 `;
 
-const Escrita = styled.div`
-  font-size: x-large;
-  font-weight: bold;
-`;
+
 

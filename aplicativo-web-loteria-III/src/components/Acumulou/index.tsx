@@ -11,7 +11,7 @@ export function Acumulou({ acumulado }: any) {
 }
 
 const Acumula = styled.div`
-    color: #0066b3;
+    color: ${props =>props.theme.acumulou};
     margin-top: 15px;
     font-size: 30px;
     font-weight: bold;
